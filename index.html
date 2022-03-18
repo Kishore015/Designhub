@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custom js -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+   <!-- Nav Section -->
+   <nav class="navbar navbar-expand-lg py-4" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Navbar</a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-primary"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main section -->
+  <main>
+      <section class="banner-section" style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.designcafe.com/wp-content/uploads/2020/03/21013530/interior-design-trends-hyderabad-2020.jpg) no-repeat center center; background-size: cover; min-height:90vh;">
+        <!-- banner-content -->
+        <div class="content text-white d-flex flex-column justify-content-center align-items-center" style="height: 90vh;">
+            <h1 class="display-1">Looking Interior</h1>
+            <h3 class="display-3">Be Aware....</h3>
+            <!-- buttons -->
+            <div class="buttons mt-2 mt-md-3">
+                <a href="#" class="btn btn-lg me-0 me-md-4 rounded-pill d-inline-block btn-outline-success btn-pill text-capitalize border-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Book a slot</a>
+                <a href="#" class="btn btn-lg rounded-pill d-inline-block btn-outline-primary btn-pill text-capitalize border-4">Know more</a>
+                <!-- Book a slot d-inline-block modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" style="max-width: 1000px; margin-top: 140px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- contact form -->
+                            <form class="row g-3">
+                                <h2 class="text-uppercase text-dark">contact information</h2>
+                                <div class="col-md-4">
+                                    <!-- <label for="name" class="form-label">Email</label> -->
+                                    <input type="text" placeholder="Your Name" class="form-control" id="name">
+                                  </div>
+                                <div class="col-md-4">
+                                  <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+                                  <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-4">
+                                  <!-- <label for="inputPassword4" class="form-label">Phone Number</label> -->
+                                  <input type="text" placeholder="Phone Number" class="form-control" id="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+                                    <select name="" id="" class="disabled form-select">
+                                        <option value="Hyderabad">Hyderabad</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <!-- <label for="inputPassword4" class="form-label">Phone Number</label> -->
+                                    <select name="" id="" class="form-select">
+                                            <option value="Awareness Session">Awareness Session</option>
+                                            <option value="Site Visit">Site Visit</option>
+                                            <option value="Full House Designing">Full House Designing</option>
+                                    </select>
+                                  </div>
+                                <div class="col-3">
+                                  <input type="date" class="form-control" name="" min="2022-01-01" id="date" autocomplete="off">
+                                  
+                                </div>
+                                 <!-- select slots -->
+                                 <div class="col-12 d-none" id="show">
+                                  <div class="slot d-booker">
+                                    <!-- slot d-inline-block-1 -->
+                                    <div class="slot-1">
+                                      <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">9:00 AM</a>
+                                    <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">10:30 AM</a>
+                                    <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">12:00 PM</a>
+                                    <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">2:00 PM</a>
+                                    </div>
+                                    <div class="slot-2">
+                                          <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">3:30 PM</a>
+                                        <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">5:00 PM</a>
+                                        <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">6:30 PM</a>
+                                    </div>
+                                    
+
+                                  </div>
+                                </div>
+                               
+                              </form>
+                            <!-- end contact form -->
+                        </div>
+                        <div class="modal-footer">
+                          <div class="col-12">
+                            <button type="submit" class="btn ms-auto btn-lg rounded-pill d-block btn-outline-success btn-pill text-uppercase border-2">Book your slot</button>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- End Book a slot d-inline-block modal -->
+            </div>
+        </div>
+      </section>
+      <!-- How we work -->
+      <section class="how-we-work container py-5">
+          <div class="text-center">
+            <h2 class="heading-title d-inline-block border-bottom border-success border-5 display-5 text-center mb-3 mb-md-5 text-uppercase">how we work</h2>
+          </div>
+          <!-- row and column with card -->
+          <div class="row">
+              <!-- column-1 -->
+              <div class="col-12 col-md-4 mb-3 mb-md-0">
+                  <div class="card px-2 px-md-4">
+                      <div class="card-body">
+                          <h5 class="card-title text-uppercase">consult</h5>
+                          <p class="card-text">we are the team of expertise in the field of interior with a vast knowledge of how things process. consulting an expert and taking his advice while staring your interiors is the best way to start. this is the time where we enter into the picture. </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- column-2 -->
+              <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <div class="card px-2 px-md-4 ">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase">consult</h5>
+                        <p class="card-text">we are the team of expertise in the field of interior with a vast knowledge of how things process. consulting an expert and taking his advice while staring your interiors is the best way to start. this is the time where we enter into the picture. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- column-3 -->
+            <div class="col-12 col-md-4">
+                <div class="card px-2 px-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase">consult</h5>
+                        <p class="card-text">we are the team of expertise in the field of interior with a vast knowledge of how things process. consulting an expert and taking his advice while staring your interiors is the best way to start. this is the time where we enter into the picture. </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!--End How we work -->
+      <!-- Who we are -->
+      <section class="who-we-are py-3 py-md-5 bg-dark">
+          <div class="container py-0 py-md-5">
+            <div class="text-center">
+                <h2 class="heading d-inline-block display-5 border-bottom border-success border-5 text-uppercase text-white">who we are</h2>
+              </div>
+              <!-- content -->
+              <div class="row pt-3 pt-md-5">
+                  <div class="col-12 col-md-4">
+                      <div class="card bg-transparent">
+                          <img class="pt-0 pt-md-0" src="https://hgaimpact.com/wp-content/uploads/2021/05/TEAM-Hands-Lightbulb-1536x823.jpg" alt="">
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-8">
+                      <div class="card bg-transparent">
+                          <div class="card-body">
+                              <p class="card-text text-white">Finding the best interiors is quite a difficult part. searching multiple interior firms, shortlisting through reviews, connecting with them, expressing your ideas, getting multiple quotes, knowing about the market, finalising with one firm, following up with multiple vendors, getting it done with in the timelines etc.</p>
+                              <p class="card-text text-white">Finding the best interiors is quite a difficult part. searching multiple interior firms, shortlisting through reviews, connecting with them, expressing your ideas, getting multiple quotes, knowing about the market, finalising with one firm, following up with multiple vendors, getting it done with in the timelines etc.</p>
+                              <p class="card-text text-white">Finding the best interiors is quite a difficult part. searching multiple interior firms, shortlisting through reviews, connecting with them, expressing your ideas, getting multiple quotes, knowing about the market, finalising with one firm, following up with multiple vendors, getting it done with in the timelines etc.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- end content -->
+          </div>
+      </section>
+      <!-- End Who we are -->
+      <section id="contact-page" class="container py-5">
+        <!-- contact form -->
+        <form class="row g-3">
+          <h2 class="text-uppercase text-dark">contact information</h2>
+          <div class="col-md-4">
+              <!-- <label for="name" class="form-label">Email</label> -->
+              <input type="text" placeholder="Your Name" class="form-control" id="name">
+            </div>
+          <div class="col-md-4">
+            <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+            <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-4">
+            <!-- <label for="inputPassword4" class="form-label">Phone Number</label> -->
+            <input type="text" placeholder="Phone Number" class="form-control" id="phone">
+          </div>
+          <div class="col-md-4">
+              <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+              <select name="" id="" class="disabled form-select">
+                  <option value="Hyderabad">Hyderabad</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <!-- <label for="inputPassword4" class="form-label">Phone Number</label> -->
+              <select name="" id="" class="form-select">
+                      <option value="Awareness Session">Awareness Session</option>
+                      <option value="Site Visit">Site Visit</option>
+                      <option value="Full House Designing">Full House Designing</option>
+              </select>
+            </div>
+          <div class="col-3">
+            <input type="date" class="form-control" name="" id="date">
+            
+          </div>
+          <!-- Select your slots -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item d-none" id="show">
+              <!-- <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Select your slot
+                </button>
+              </h2> -->
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- select slots -->
+                  <div class="col-12">
+                    <div class="slot d-booker">
+                      <!-- slot d-inline-block-1 -->
+                      <div class="slot-1">
+                        <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">9:00 AM</a>
+                      <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">10:30 AM</a>
+                      <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">12:00 PM</a>
+                      <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">2:00 PM</a>
+                      </div>
+                      <div class="slot-2">
+                            <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">3:30 PM</a>
+                          <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">5:00 PM</a>
+                          <a href="" class="btn btn-outline-success  slot d-inline-block text-decoration-none border border-3 px-5 py-2  mx-3 my-2">6:30 PM</a>
+                      </div>
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End slots -->
+         
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      <!-- end contact form -->
+      <!-- Book your slot -->
+      </section>
+         
+  </main>
+  <!--End main section -->
+  <!-- footer -->
+  <footer class="bg-white py-5">
+    <div class="footer-content container">
+        <div class="row text-center">
+            <div class="col-12 col-md-4">
+                <a href="#" class="text-decoration-none">Contact</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="#" class="text-decoration-none">Contact</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="#" class="text-decoration-none">Contact</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
