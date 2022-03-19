@@ -1,5 +1,7 @@
 let date = document.getElementById('date');
 
+let date_1 = document.getElementById('date1');
+
 let js_date = new Date();
 
 let today = js_date.getDate();
@@ -20,6 +22,8 @@ let currentDate =  year + "-" + month + "-" + today;
 
 let date1 = document.getElementById('date').setAttribute('min', currentDate);
 
+
+
 console.log(date1);
 //console.log(currentDate);
 
@@ -36,4 +40,14 @@ form.addEventListener('submit', ()=>{
 date.addEventListener('input', ()=>{
     document.getElementById('show').classList = "d-block";
 })
+
+
+// show slots
+
+// show slot timings
+date_1.addEventListener('input', ()=>{
+    document.getElementById('show1').classList = "d-block";
+})
+
+let date2 = document.getElementById('date_1').setAttribute('min', currentDate);
 
