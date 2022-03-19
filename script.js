@@ -1,4 +1,4 @@
-
+let date = document.getElementById('date');
 
 let js_date = new Date();
 
